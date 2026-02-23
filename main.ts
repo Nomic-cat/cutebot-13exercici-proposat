@@ -4,6 +4,7 @@ input.onButtonPressed(Button.A, function () {
     cuteBot.setServo(cuteBot.ServoList.S1, angle)
     OLED.writeNumNewLine(angle)
     if (angle == 180) {
+        OLED.clear()
         cuteBot.setServo(cuteBot.ServoList.S1, 0)
         angle = 0
     }
